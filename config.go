@@ -15,7 +15,9 @@ import (
 //	type Config struct {
 //	    DatabaseURL string `env:"DATABASE_URL"`
 //	}
-type Config struct{}
+type Config struct {
+	LogLevel string `env:"LOG_LEVEL"`
+}
 
 // config is a singleton instance of Config
 var config *Config
