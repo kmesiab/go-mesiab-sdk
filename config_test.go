@@ -12,7 +12,6 @@ import (
 
 // TestGetConfigSingleton tests if GetConfig returns the same instance every time.
 func TestGetConfigSingleton(t *testing.T) {
-
 	oldLogLevel := os.Getenv("LOG_LEVEL")
 	err := os.Setenv("LOG_LEVEL", "info")
 	if err != nil {
@@ -40,7 +39,6 @@ func TestGetConfigSingleton(t *testing.T) {
 
 // TestValidateConfig tests the validation of the Config struct.
 func TestValidateConfig(t *testing.T) {
-
 	oldLogLevel := os.Getenv("LOG_LEVEL")
 	err := os.Setenv("LOG_LEVEL", "info")
 	if err != nil {
