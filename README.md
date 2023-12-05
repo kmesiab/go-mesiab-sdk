@@ -15,9 +15,9 @@ configuration objects routers, middleware, validators, templates, etc.
 
 <div align="center"><!-- markdownlint-disable-line MD033 -->
 
-![Build and Test](https://github.com/kmesiab/go-mesiab-sdk/actions/workflows/go-build.yml/badge.svg)
-![Golang Lint](https://github.com/kmesiab/go-mesiab-sdk/actions/workflows/go-lint.yml/badge.svg)
-![Link Markdown](https://github.com/kmesiab/go-mesiab-sdk/actions/workflows/markdown-lint.yml/badge.svg)
+![Build and Test](https://github.com/kmesiab/go-mesiab-sdk/actions/workflows/go.yml/badge.svg)
+![Lint](https://github.com/kmesiab/go-mesiab-sdk/actions/workflows/lint.yml/badge.svg)
+![Security](https://github.com/kmesiab/go-mesiab-sdk/actions/workflows/sec.yml/badge.svg)
 
 ![Logo](./assets/logo-transparent-small.png)
 
