@@ -13,7 +13,8 @@ routers, middleware, validators, templates, etc.
 
 ## Badges
 
-![Build](https://github.com/kmesiab/go-audibly/actions/workflows/go.yml/badge.svg)
+![Build and Test](https://github.com/kmesiab/go-mesiab-sdk/actions/workflows/go.yml/badge.svg) 
+![Lint Markdown](https://github.com/kmesiab/go-mesiab-sdk/actions/workflows/readme.yml/badge.svg)
 
 ![Logo](./assets/logo-small.png)
 
