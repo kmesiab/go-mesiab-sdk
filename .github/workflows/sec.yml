@@ -1,0 +1,25 @@
+name: Security
+
+defaults:
+  run:
+    shell: bash
+
+on:
+  push:
+    branches:
+      - '**'
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    env:
+      GO111MODULE: on
+
+    steps:
+      - name: 🛒 Checkout Code
+        uses: actions/checkout@v3
+
+      - name: 🔒 Gosec Security Scanner
+        uses: securego/gosec@master
+        with:
+          args: ./...

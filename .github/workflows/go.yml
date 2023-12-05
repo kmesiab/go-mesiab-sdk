@@ -1,4 +1,4 @@
-name: Lint Go Code
+name: Build
 
 defaults:
   run:
@@ -11,9 +11,9 @@ on:
 
 jobs:
 
-  build_and_test_go:
+  build_go:
+    name: "🏗 Compile"
 
-    name: 🏗️ Build and Test
     runs-on: ubuntu-latest
     steps:
       - name: 🛒 Checkout Code
@@ -32,12 +32,20 @@ jobs:
       - name: 🤖 Build
         run: go build .
 
+  test_go:
+    name: "🧪 Unit Test"
 
-      - name: 🕵️‍♂️ Run GolangCI-Lint
-        uses: golangci/golangci-lint-action@v3
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛒 Checkout Code
+        uses: actions/checkout@v3
+
+      - name: 🚀 Set up Go
+        uses: actions/setup-go@v4.1.0
         with:
-          version: v1.54
-
+          go-version: '1.21.4'
+          cache: true
+          check-latest: true
 
       - name: 🧪 Execute Tests
         run: make test

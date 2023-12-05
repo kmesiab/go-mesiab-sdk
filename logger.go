@@ -80,7 +80,6 @@ func (l LogMessage) Add(key string, value string) LogMessage {
 }
 
 func (l LogMessage) AddError(err error) LogMessage {
-
 	trace := debug.Stack()
 
 	l.Fields["error"] = err.Error()

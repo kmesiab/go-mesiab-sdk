@@ -1,4 +1,4 @@
-name: Lint Readme
+name: Lint
 
 defaults:
   run:
@@ -13,7 +13,7 @@ jobs:
 
   lint-markdown:
 
-    name: 📝 Lint README
+    name: "🧹 Markdown"
     continue-on-error: true
     runs-on: ubuntu-latest
     steps:
@@ -30,3 +30,23 @@ jobs:
 
       - name: 🖊️ Run markdownlint
         run: find . -name '*.md' -exec markdownlint {} +
+
+  lint_go:
+    name: "️‍️🕵️ Golang"
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛒 Checkout Code
+        uses: actions/checkout@v3
+
+      - name: 🚀 Set up Go
+        uses: actions/setup-go@v4.1.0
+        with:
+          go-version: '1.21.4'
+          cache: true
+          check-latest: true
+
+      - name: 🕵️‍♂️ Run GolangCI-Lint
+        uses: golangci/golangci-lint-action@v3
+        with:
+          version: v1.54
