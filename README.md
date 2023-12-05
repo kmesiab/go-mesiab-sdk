@@ -8,8 +8,8 @@ configuration objects routers, middleware, validators, templates, etc.
 1. [Badges](#badges) 📛
 2. [Makefile](#makefile-) 🚀
 3. [Linting](#linting-)  🧹
-4. [Github Actions](#github-actions-%EF%B8%8F) 👷🏼‍
-5. [Config](#config-%EF%B8%8F) ⚙️
+4. [Github Actions](#github-actions-) 👷🏼‍ <!-- markdownlint-disable-line MD051 --><!-- markdownlint-disable-line MD013 -->
+5. [Config](#config-) ⚙️  <!-- markdownlint-disable-line MD051 -->
 
 ## Badges
 
@@ -17,7 +17,7 @@ configuration objects routers, middleware, validators, templates, etc.
 ![Golang Lint](https://github.com/kmesiab/go-mesiab-sdk/actions/workflows/go-lint.yml/badge.svg)
 ![Link Markdown](https://github.com/kmesiab/go-mesiab-sdk/actions/workflows/markdown-lint.yml/badge.svg)
 
-![Logo](./assets/logo-small.png)
+![Logo](./assets/logo-transparent.png)
 
 ![Golang](https://img.shields.io/badge/Go-00add8.svg?labelColor=171e21&style=for-the-badge&logo=go)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
@@ -26,7 +26,7 @@ configuration objects routers, middleware, validators, templates, etc.
 
 ## Makefile 🚀
 
-The include makefile template already includes a a lot of
+The include makefile template already includes a lot of
 targets. The most important ones are:
 
 - `make build` - builds the project
@@ -36,7 +36,7 @@ targets. The most important ones are:
 
 ## Linting 🧹
 
-The makefile and github actions are configured to run two linters,
+The makefile and GitHub actions are configured to run two linters,
 the `golangci-lint` and `markdownlint`
 
 🌐 [Markdown Lint](https://github.com/DavidAnson/markdownlint) -
