@@ -1,0 +1,32 @@
+name: go-mesiab-sdk
+
+defaults:
+  run:
+    shell: bash
+
+on:
+  push:
+    branches:
+      - '**'
+
+jobs:
+
+  lint-markdown:
+
+    name: 📝 Lint README
+    continue-on-error: true
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛒 Checkout Code
+        uses: actions/checkout@v3
+
+      - name: 📦 Install Node.js and npm
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.0.0'
+
+      - name: 📚 Install markdownlint-cli
+        run: npm install -g markdownlint-cli
+
+      - name: 🖊️ Run markdownlint
+        run: find . -name '*.md' -exec markdownlint {} +

@@ -1,3 +1,4 @@
-# go-script-tokenizer
-# ai-code-critic
 # go-mesiab-sdk
+
+An SDK for my most commonly used stuff
+
