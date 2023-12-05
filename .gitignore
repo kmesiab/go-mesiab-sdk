@@ -1,2 +1,5 @@
 .idea
 .DStore
+.terraform
+.terraform.lock.hcl
+
