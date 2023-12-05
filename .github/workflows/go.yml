@@ -1,4 +1,4 @@
-name: go-mesiab-sdk
+name: Lint Go Code
 
 defaults:
   run:
