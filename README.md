@@ -1,11 +1,11 @@
 # 🛠️ go-mesiab-sdk
 
-An SDK for my (@kmesiab's) most commonly used stuff, like loggers, configuration objects
-routers, middleware, validators, templates, etc.
+An SDK for my (@kmesiab's) most commonly used stuff, like loggers,
+configuration objects routers, middleware, validators, templates, etc.
 
-# Table of Contents
+## Table of Contents
 
-1. [Badges](#Badges) 📛
+1. [Badges](#badges) 📛
 2. [Makefile](#makefile-) 🚀
 3. [Linting](#linting-)  🧹
 4. [Github Actions](#github-actions-%EF%B8%8F) 👷🏼‍
@@ -13,8 +13,9 @@ routers, middleware, validators, templates, etc.
 
 ## Badges
 
-![Build and Test](https://github.com/kmesiab/go-mesiab-sdk/actions/workflows/go.yml/badge.svg) 
-![Lint Markdown](https://github.com/kmesiab/go-mesiab-sdk/actions/workflows/readme.yml/badge.svg)
+![Build and Test](https://github.com/kmesiab/go-mesiab-sdk/actions/workflows/go-build.yml/badge.svg)
+![Golang Lint](https://github.com/kmesiab/go-mesiab-sdk/actions/workflows/go-lint.yml/badge.svg)
+![Link Markdown](https://github.com/kmesiab/go-mesiab-sdk/actions/workflows/markdown-lint.yml/badge.svg)
 
 ![Logo](./assets/logo-small.png)
 
@@ -30,7 +31,7 @@ targets. The most important ones are:
 
 - `make build` - builds the project
 - `make test` - runs the tests
-- `make lint` - runs the linters. This includes `golangci-lint` and 
+- `make lint` - runs the linters. This includes `golangci-lint` and
 `markdownlint.` You can also use `make lint-go`
 
 ## Linting 🧹
@@ -38,9 +39,11 @@ targets. The most important ones are:
 The makefile and github actions are configured to run two linters,
 the `golangci-lint` and `markdownlint`
 
-🌐 [Markdown Lint](https://github.com/DavidAnson/markdownlint) - The markdown lint project's homepage
+🌐 [Markdown Lint](https://github.com/DavidAnson/markdownlint) -
+The markdown lint project's homepage
 
-🌐 [Golangci Lint](https://github.com/golangci/golangci-lint) - The golang linter's project homepage
+🌐 [Golangci Lint](https://github.com/golangci/golangci-lint) -
+The golang linter's project homepage
 
 ## Github Actions 👷🏼‍♂️
 
