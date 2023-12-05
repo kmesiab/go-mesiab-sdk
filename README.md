@@ -17,7 +17,7 @@ configuration objects routers, middleware, validators, templates, etc.
 ![Golang Lint](https://github.com/kmesiab/go-mesiab-sdk/actions/workflows/go-lint.yml/badge.svg)
 ![Link Markdown](https://github.com/kmesiab/go-mesiab-sdk/actions/workflows/markdown-lint.yml/badge.svg)
 
-![Logo](./assets/logo-transparent.png)
+![Logo](./assets/logo-transparent-small.png)
 
 ![Golang](https://img.shields.io/badge/Go-00add8.svg?labelColor=171e21&style=for-the-badge&logo=go)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
